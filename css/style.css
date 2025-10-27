@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff8200;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar img {
+    margin-left: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #292929;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.navbar .search {
+    margin-right: 2%;
+    display: flex;
+    gap: 0;
+}
+
+.navbar .search input {
+    width: 300px;
+    height: 30px;
+    border-bottom: #292929 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #ff8200;
+    color: #292929;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;  
+}
+
+.navbar .search input::placeholder {
+    color: #292929;
+}
+
+.navbar .search input:focus {
+    outline: none;
+}
+
+.navbar .search button {
+    width: 40px;
+    height: 35px;
+    border: none;
+    background-color: #ff8200;
+}
+
+.navbar .search button i {
+    font-size: 25px;
+    color: #292929;
+    font-weight: 400;
+}
+
+#P_img {
+    padding-top: 10%;
+    text-align: center;
+    background-image: url(../img/convert.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+    border: none;
+}
+
+#P_img h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 120px;
+    color: white;
+    text-shadow: 5px 5px 0 #ff8200;
+}
+
+#Tennessee {
+    text-align: center;
+    background-color: #ff8200;
+    padding: 78px 0;
+
+}
+
+#Tennessee h1 {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    color: white;    
+}
+
+#Tennessee .theme1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 7%;
+}
+
+#Tennessee .theme1 p {
+    font-family: "Poppins", serif;
+    font-size: 13px;
+    margin-right: 3%;
+    font-weight: 400;
+    color: #292929;
+}
+
+#Shop {
+    text-align: center;
+    background-color: white;
+    padding-top: 65px;
+    padding-bottom: 40px;
+}
+
+#Shop h1 {
+    font-size: 60px;;
+    font-family: "Poppins", sans-serif;
+    color: #292929; 
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+#Shop .article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 140px 4% 240px;
+}
+
+#Shop .article h2 {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 40px;
+}
+
+#Shop .article a {
+    padding: 5px 40px;
+    background-color: #cecdcd;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #292929;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+#Shop .article a:hover {
+    color: white;
+    background-color: #ff8200;
+}
+
+#Shop .article img {
+    transition: all .3s ease;
+}
+
+#Shop .article img:hover {
+    transform: translateY(-20px);
+} 
+
+#Schedule img {
+    width: 100%;
+}
+
+#Tickets {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #cecdcd;
+}
+
+#Tickets .chaire h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    color: #ff8200;
+    text-shadow: 3px 3px 0 #292929;
+}
+
+#Tickets .chaire {
+    margin: 0 5%;
+}
+
+#Tickets .billet {
+    background-image: url(../img/folclore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#Tickets .s,.ss,.sss {
+    height: 100vh;
+    width: 30px;
+}
+
+#Tickets .s {
+    background-color: #949494;
+}
+
+#Tickets .ss {
+    background-color: #686868;
+}
+
+#Tickets .sss {
+    background-color: #000000;
+}
+
+#Tickets .billet form {
+    margin-top: 25%;
+    margin-left: 17%;
+    margin-right: 17%;
+    background-color: #292929d5;
+    box-shadow: 0 0 20px white;
+    border-radius: 5%;
+}
+
+#Tickets .billet form h2 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+#Tickets .billet form  label {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    font-weight: 500;
+}
+
+#Tickets .billet form input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 3px white;
+    background-color: transparent;
+    margin-top: 30px;
+    width: 250px;
+    font-family: "Poppins", sans-serif;
+    color: #ff8200;
+    font-size: 17px;
+    outline: none;
+    margin-left: 10px;
+}
+
+#Tickets .billet form select {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    color: #292929;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#Tickets .billet form button {
+    margin: 40px 0;
+    width: 150px;
+    height: 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #292929;
+    background-color: #ff8200;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 14px #ff8200;
+    border: 3px solid #ff8200;
+    transition: .3s;
+}
+
+#Tickets .billet form button:hover {
+    background-color: #292929c7;
+    color: #ff8200;
+    box-shadow: none;
+}
+
+#Stadium {
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 35px ;
+}
+
+#Stadium h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    color: #ff8200;
+    text-shadow: 2px 2px 0 white;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+#Stadium .lock-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+}
+
+
+#Stadium .lock-fields .lf1 h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    color: #292929;
+}
+
+#Stadium .lock-fields .lf2 {
+    margin: 0 100px;
+}
+
+#Stadium .lock-fields .lf1 h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    color: #292929;
+}
+
+#Stadium img {
+    border-radius: 15px;
+    transition: all .3s ease;
+    box-shadow: 0 0 16px #292929;
+}
+
+#Stadium img:hover {
+    box-shadow: 0 0 16px #ff8200;
+    transform: translateY(-15px);
+}
+
+#Stadium .lock-fields button {
+    font-family: "Poppins", sans-serif;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: #ff8200;
+    border: solid 3px #ff8200;
+    box-shadow: 0 0 13px #ff8200;
+    margin-bottom: 4%;
+    border-radius: 9px;
+    transition: .3s;
+}
+
+#Stadium .lock-fields button:hover {
+    color: #ff8200;
+    background-color: white;
+    box-shadow: none;
+}
+
+#Contact {
+    background-color: #292929;
+    padding: 1%;
+    text-align: center;
+}
+
+#Contact h1 {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+#Contact form label {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    margin: 40px 10px;
+}
+
+#Contact form input {
+    background-color: #292929;
+    outline: none;
+    border-bottom: 3px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 400px;
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    margin-top: 35px;
+}
+
+#Contact form button {
+    width: 400px;
+    height: 40px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #292929;
+    background-color: white;
+    margin: 50px;
+    border-radius: 9px;
+    border: 3px solid white;
+    transition: .3s;
+}
+
+#Contact form button:hover {
+    color: white;
+    background-color: #292929;
+}
+
+#Contact .trait {
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    margin-top: 40px;
+}
+
+#Contact .link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 5% 15px 18%;
+}
+
+#Contact .link a {
+    display: inline-flex;
+    font-size: 15px;
+    padding: 7px;
+    color: white;
+    margin-left: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+#Contact .link a:hover {
+    border: 2px solid #ff8200;
+    background-color: #ff8200;
+    color: white;
+}
+
+#Contact .link img {
+    margin-left: 15px;
+}
